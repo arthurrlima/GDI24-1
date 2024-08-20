@@ -154,3 +154,39 @@ CREATE TABLE comprar (
     FOREIGN KEY (id_pagamento) REFERENCES pagamento(id_pagamento),
     FOREIGN KEY (nivel) REFERENCES plano_de_assinatura(nivel)
 )
+
+-- tabela usuario
+CREATE SEQUENCE usuario_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    NOCACHE 
+    NOCYCLE;
+
+
+-- tabela espaco_de_trabalho
+CREATE SEQUENCE espaco_de_trabalho_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    NOCACHE 
+    NOCYCLE;
+
+-- tabela sessao
+CREATE SEQUENCE sessao_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    NOCACHE 
+    NOCYCLE;
+
+-- tabela evento
+CREATE SEQUENCE evento_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    NOCACHE 
+    NOCYCLE;
+
+-- tabela pagamento
+CREATE SEQUENCE pagamento_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    NOCACHE 
+    NOCYCLE;
