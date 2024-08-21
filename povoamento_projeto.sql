@@ -64,16 +64,16 @@ INSERT INTO pessoa (id_pessoa, telefone, cpf, end_CEP) VALUES (101, '(24) 8562-3
 
 -- INSERT CONVIDADOS
 
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (1, 1, 580, 1001, 'João Silva');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (2, 2, 65, 1002, 'Maria Santos');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (3, 3, 2, 1003, 'Carlos Pereira');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (4, 4, 143, 1004, 'Ana Oliveira');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (5, 5, 38334, 1005, 'Pedro Costa');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (6, 6, 462, 1006, 'Lucas Lima');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (7, 7, 851, 1007, 'Fernanda Rodrigues');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (8, 8, 31, 1008, 'Juliana Souza');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (9, 9, 4, 1009, 'Ricardo Ferreira');
-INSERT INTO convidado (id_convidado, no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (10, 10, 522, 1010, 'Patrícia Carvalho');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (1, 1, 580, 1001, 'João Silva');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (2, 2, 65, 1002, 'Maria Santos');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (3, 3, 2, 1003, 'Carlos Pereira');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (4, 4, 143, 1004, 'Ana Oliveira');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (5, 5, 38334, 1005, 'Pedro Costa');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (6, 6, 462, 1006, 'Lucas Lima');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (7, 7, 851, 1007, 'Fernanda Rodrigues');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (8, 8, 31, 1008, 'Juliana Souza');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (9, 9, 4, 1009, 'Ricardo Ferreira');
+INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (10, 10, 522, 1010, 'Patrícia Carvalho');
 
 -- INSERT INTO DE EMPRESAS
 
