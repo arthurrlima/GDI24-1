@@ -1,17 +1,17 @@
-DROP TABLE tipo_espaco;
-DROP TABLE evento;
-DROP TABLE pagamento;
-DROP TABLE espaco_de_trabalho;
-DROP TABLE convidado;
-DROP TABLE organizar;
 DROP TABLE comprar;
-DROP TABLE plano_de_assinatura;
+DROP TABLE organizar;
 DROP TABLE reserva;
+DROP TABLE convidado;
+DROP TABLE plano_de_assinatura;
+DROP TABLE pagamento;
+DROP TABLE evento;
 DROP TABLE sessao;
+DROP TABLE tipo_espaco;
+DROP TABLE espaco_de_trabalho;
 DROP TABLE empresa;
 DROP TABLE pessoa;
-DROP TABLE usuario;
 DROP TABLE alimentacao;
+DROP TABLE usuario;
 DROP TABLE endereco;
 
 CREATE TABLE endereco (
@@ -28,6 +28,7 @@ CREATE TABLE usuario (
     telefone VARCHAR2(15),
     end_CEP VARCHAR2(10),
     cod_barras VARCHAR2(13),
+    nome_usuario VARCHAR2(100),
 
     CONSTRAINT usuario_pk PRIMARY KEY (id_usuario),
     CONSTRAINT usuario_endereco_fk FOREIGN KEY (end_CEP) REFERENCES endereco (end_CEP),
@@ -74,8 +75,8 @@ CREATE TABLE espaco_de_trabalho (
 
 CREATE TABLE tipo_espaco (
     espaco_trabalho NUMBER,            
-    tipo_espaco VARCHAR2(50) NOT NULL, 
-    CONSTRAINT tipo_espaco_pk PRIMARY KEY (espaco_trabalho, tipo_espaco),  
+    tipo VARCHAR2(50) NOT NULL, 
+    CONSTRAINT tipo_espaco_pk PRIMARY KEY (espaco_trabalho, tipo),  
     CONSTRAINT espaco_trabalho_fk FOREIGN KEY (espaco_trabalho) REFERENCES espaco_de_trabalho (id_espaco)
 );
 
@@ -125,9 +126,10 @@ CREATE TABLE convidado (
 );
 
 CREATE TABLE reserva (
-    usuario_id NUMBER,                              
+    id_usuario NUMBER,                              
     espaco_de_trabalho_id NUMBER,
-    id_sessao NUMBER,                   
+    id_sessao NUMBER,
+
     PRIMARY KEY (usuario_id, espaco_de_trabalho_id),  
     CONSTRAINT reserva_usuario_fk FOREIGN KEY (usuario_id) REFERENCES usuario (id_usuario),
     CONSTRAINT reserva_espaco_de_trabalho_fk FOREIGN KEY (espaco_de_trabalho_id) REFERENCES espaco_de_trabalho (id_espaco),
@@ -143,6 +145,7 @@ CREATE TABLE organizar (
 );
 
 CREATE TABLE comprar (
+    data_e_hora_compra TIMESTAMP NOT NULL,                    
     usuario_id NUMBER,
     id_pagamento NUMBER,
     nivel VARCHAR2(50),
