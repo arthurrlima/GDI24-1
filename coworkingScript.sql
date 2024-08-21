@@ -115,13 +115,11 @@ CREATE TABLE plano_de_assinatura (
 );
 
 CREATE TABLE convidado (
-    id_convidado NUMBER,                     
+    id_pessoa NUMBER DEFAULT usuario_seq.NEXTVAL,           
     no_convidado NUMBER,
-    id_pessoa NUMBER,     
     id_sessao NUMBER,             
     nome_convidado VARCHAR2(100) NOT NULL, 
-    PRIMARY KEY (id_convidado, no_convidado), 
-    CONSTRAINT fk_usuario FOREIGN KEY (id_convidado) REFERENCES usuario (id_usuario),
+    PRIMARY KEY (id_pessoa, no_convidado), 
     CONSTRAINT fk_convidado_pessoa FOREIGN KEY (id_pessoa) REFERENCES pessoa (id_pessoa),
     CONSTRAINT fk_convidado_sessao FOREIGN KEY (id_sessao) REFERENCES sessao (id_sessao)
 );
@@ -154,39 +152,3 @@ CREATE TABLE comprar (
     FOREIGN KEY (id_pagamento) REFERENCES pagamento(id_pagamento),
     FOREIGN KEY (nivel) REFERENCES plano_de_assinatura(nivel)
 )
-
--- tabela usuario
-CREATE SEQUENCE usuario_seq 
-    START WITH 1 
-    INCREMENT BY 1 
-    NOCACHE 
-    NOCYCLE;
-
-
--- tabela espaco_de_trabalho
-CREATE SEQUENCE espaco_de_trabalho_seq 
-    START WITH 1 
-    INCREMENT BY 1 
-    NOCACHE 
-    NOCYCLE;
-
--- tabela sessao
-CREATE SEQUENCE sessao_seq 
-    START WITH 1 
-    INCREMENT BY 1 
-    NOCACHE 
-    NOCYCLE;
-
--- tabela evento
-CREATE SEQUENCE evento_seq 
-    START WITH 1 
-    INCREMENT BY 1 
-    NOCACHE 
-    NOCYCLE;
-
--- tabela pagamento
-CREATE SEQUENCE pagamento_seq 
-    START WITH 1 
-    INCREMENT BY 1 
-    NOCACHE 
-    NOCYCLE;
