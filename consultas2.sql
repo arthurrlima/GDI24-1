@@ -1,7 +1,3 @@
-
-
-
-
 -- Bloco anônimo para inserção de um único registro na tabela usuario
 BEGIN
     -- Inserção de um único registro
