@@ -1,3 +1,17 @@
+-- INSERT SESSAO
+
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-19 09:00:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-20 10:30:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-21 11:45:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-22 13:00:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-23 14:15:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-24 15:30:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-25 16:45:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-26 18:00:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-27 19:15:00');
+INSERT INTO sessao (id_sessao, data_e_hora) VALUES (sessao_seq.NEXTVAL, TIMESTAMP '2024-08-28 20:30:00');
+
+
 --INSERINDO ENDEREÇOS
 
 INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('79096-149', 'Rua das Acácias', '123', 'Campo Grande');
@@ -10,22 +24,60 @@ INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('39447-9
 INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('13767-704', 'Rua Santos Dumont', '404', 'Mococa');
 INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('45768-419', 'Rua Bahia', '505', 'Itapetinga');
 INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('58027-392', 'Rua João Pessoa', '606', 'João Pessoa');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('54579-304', 'Rua dos Navegantes', '707', 'Cabo de Santo Agostinho');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('64010-460', 'Rua das Orquídeas', '808', 'Teresina');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('97418-235', 'Rua Bento Gonçalves', '909', 'São Borja');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('86162-579', 'Rua das Laranjeiras', '110', 'Rolândia');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('12345-678', 'Rua Nova Esperança', '111', 'Belo Horizonte');
+INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('01000-000', 'Rua dos Navegantes', '707', 'Cabo de Santo Agostinho');
+INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('20230-012', 'Rua das Orquídeas', '808', 'Teresina');
+INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('30140-110', 'Rua Bento Gonçalves', '909', 'São Borja');
+INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('80010-123', 'Rua das Laranjeiras', '110', 'Rolândia');
+INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('90050-002', 'Rua Nova Esperança', '111', 'Belo Horizonte');
 INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('23456-789', 'Avenida Central', '112', 'Recife');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('34567-890', 'Rua do Comércio', '113', 'Porto Alegre');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('45678-901', 'Rua dos Andradas', '114', 'Florianópolis');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('56789-012', 'Rua dos Bandeirantes', '115', 'Salvador');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('67890-123', 'Rua da Paz', '116', 'São Paulo');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('78901-234', 'Rua Independência', '117', 'Rio de Janeiro');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('97418-235', 'Rua das Laranjeiras', '118', 'São Borja');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('86162-579', 'Rua do Mercado', '119', 'Rolândia');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('67109-350', 'Rua das Hortênsias', '220', 'Belém');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('60020-340', 'Avenida Imperador', '130', 'Fortaleza');
-INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('82300-800', 'Rua Almirante Tamandaré', '150', 'Curitiba');
+INSERT INTO endereco (end_CEP, end_rua, end_numero, end_cidade) VALUES ('70040-010', 'Rua do Comércio', '113', 'Porto Alegre');
+
+
+-- INSERT EVENTO
+
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-19 08:00:00', INTERVAL '60' MINUTE, 15);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-20 09:30:00', INTERVAL '90' MINUTE, 20);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-21 10:45:00', INTERVAL '120' MINUTE, 18);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-22 12:00:00', INTERVAL '45' MINUTE, 10);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-23 13:15:00', INTERVAL '150' MINUTE, 12);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-24 14:30:00', INTERVAL '180' MINUTE, 14);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-25 15:45:00', INTERVAL '240' MINUTE, 20);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-26 17:00:00', INTERVAL '30' MINUTE, 8);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-27 18:15:00', INTERVAL '90' MINUTE, 16);
+INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (evento_seq.NEXTVAL, TIMESTAMP '2024-08-28 19:30:00', INTERVAL '120' MINUTE, 11);
+
+-- INSERT ESPAÇOS DE TRABALHO
+
+INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (espaco_de_trabalho_seq.NEXTVAL, 1);
+INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (espaco_de_trabalho_seq.NEXTVAL, 2);
+INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (espaco_de_trabalho_seq.NEXTVAL, 3);
+INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (espaco_de_trabalho_seq.NEXTVAL, 5);
+INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (espaco_de_trabalho_seq.NEXTVAL, 10);
+INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (espaco_de_trabalho_seq.NEXTVAL, 15);
+INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (espaco_de_trabalho_seq.NEXTVAL, 20);
+
+-- INSERT PAGAMENTO
+
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-19 10:15:30', 'Ana Silva', '12345678901', '1234567812345678', '123', DATE '2025-01-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-20 11:22:45', 'Carlos Souza', '23456789012', '2345678923456789', '234', DATE '2025-02-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-21 12:33:50', 'Fernanda Oliveira', '34567890123', '3456789034567890', '345', DATE '2025-03-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-22 13:44:55', 'Joao Pereira', '45678901234', '4567890145678901', '456', DATE '2025-04-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-23 14:55:10', 'Mariana Costa', '56789012345', '5678901256789012', '567', DATE '2025-05-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-24 15:06:25', 'Roberto Almeida', '67890123456', '6789012367890123', '678', DATE '2025-06-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-25 16:17:35', 'Tatiane Lima', '78901234567', '7890123478901234', '789', DATE '2025-07-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-26 17:28:45', 'Vinícius Santos', '89012345678', '8901234589012345', '890', DATE '2025-08-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-27 18:39:55', 'Juliana Rodrigues', '90123456789', '9012345690123456', '901', DATE '2025-09-01');
+INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
+VALUES (pagamento_seq.NEXTVAL, TIMESTAMP '2024-08-28 19:50:05', 'Eduardo Martins', '01234567890', '0123456701234567', '012', DATE '2025-10-01');
 
 --INSERINDO USUARIOS
 
@@ -39,89 +91,13 @@ INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (851, '
 INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (31, '(24) 9071-3310', '13767-704', 'Laura Pereira');
 INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (4, '(39) 9573-3672', '45768-419', 'Pedro Rocha');
 INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (522, '(20) 3360-3052', '58027-392', 'Fernanda Lima');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (820, '(51) 2238-7680', '69088-086', 'Ricardo Mendes');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (27, '(68) 3334-3236', '54579-304', 'Juliana Azevedo');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (574, '(70) 5900-5783', '64010-460', 'Thiago Carvalho');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (888, '(59) 9422-1937', '58027-392', 'Isabela Monteiro');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (86, '(13) 1403-4641', '69053-640', 'Rafael Martins');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (66, '(53) 2915-6275', '69088-086', 'Carolina Souza');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (91, '(13) 9488-5267', '58027-392', 'André Teixeira');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (25, '(42) 6724-3062', '97418-235', 'Camila Dias');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (61, '(80) 5065-1619', '86162-579', 'Rodrigo Fernandes');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (501, '(14) 5319-4756', '69053-640', 'Patrícia Gomes');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (101, '(42) 3672-8345', '12345-678', 'Tech Innovators Inc.');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (202, '(31) 4563-2847', '23456-789', 'Global Ventures Ltda.');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (303, '(68) 8921-3567', '34567-890', 'Pioneering Solutions SA');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (404, '(13) 3471-9824', '45678-901', 'Innovative Enterprises LLC');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (505, '(80) 6173-2947', '56789-012', 'NextGen Technologies Ltd.');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (606, '(70) 8346-1729', '67890-123', 'Visionary Holdings Corp.');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (707, '(59) 4718-2936', '78901-234', 'Progressive Enterprises');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (901, '(11) 98234-5678', '01000-000', 'Ricardo Martins');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (702, '(21) 97345-6789', '20230-012', 'Tatiana Souza');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (315, '(31) 99876-5432', '30140-110', 'Paulo Henrique');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (819, '(41) 98765-4321', '80010-123', 'Beatriz Andrade');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (237, '(51) 99654-3210', '90050-002', 'Renato Carvalho');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (118, '(61) 98456-7890', '70040-010', 'Juliana Ribeiro');
 
---INSERT INTO DE PESSOAS
-
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (580, '356.845.987-10');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (65, '789.654.123-87');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (2, '123.456.789-00');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (143, '987.654.321-23');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (38334, '321.654.987-45');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (462, '852.741.963-12');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (851, '963.258.741-98');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (31, '741.852.963-77');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (4, '123.321.456-89');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (522, '789.987.654-33');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (820, '852.159.753-44');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (27, '963.741.852-66');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (574, '654.123.987-55');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (888, '987.321.654-11');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (86, '147.852.963-09');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (66, '258.369.147-88');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (91, '123.456.789-55');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (25, '951.357.258-33');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (61, '753.951.852-22');
-INSERT INTO pessoa (id_pessoa, cpf) VALUES (501, '654.789.321-99');
-
--- INSERT INTO DE EMPRESAS
-
-INSERT INTO empresa (id_empresa, cnpj) VALUES (101, '12.345.678/0001-90');
-INSERT INTO empresa (id_empresa, cnpj) VALUES (202, '23.456.789/0001-01');
-INSERT INTO empresa (id_empresa, cnpj) VALUES (303, '34.567.890/0001-12');
-INSERT INTO empresa (id_empresa, cnpj) VALUES (404, '45.678.901/0001-23');
-INSERT INTO empresa (id_empresa, cnpj) VALUES (505, '56.789.012/0001-34');
-INSERT INTO empresa (id_empresa, cnpj) VALUES (606, '67.890.123/0001-45');
-INSERT INTO empresa (id_empresa, cnpj) VALUES (707, '78.901.234/0001-56');
-
--- INSERT CONVIDADOS
-
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (1, 1, 580, 1001, 'João Silva');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (2, 2, 65, 1002, 'Maria Santos');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (3, 3, 2, 1003, 'Carlos Pereira');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (4, 4, 143, 1004, 'Ana Oliveira');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (5, 5, 38334, 1005, 'Pedro Costa');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (6, 6, 462, 1006, 'Lucas Lima');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (7, 7, 851, 1007, 'Fernanda Rodrigues');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (8, 8, 31, 1008, 'Juliana Souza');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (9, 9, 4, 1009, 'Ricardo Ferreira');
-INSERT INTO convidado (no_convidado, id_pessoa, id_sessao, nome_convidado) VALUES (10, 10, 522, 1010, 'Patrícia Carvalho');
-
--- INSERT ESPAÇOS DE TRABALHO
-
-INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (1, 1);
-INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (2, 2);
-INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (3, 3);
-INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (4, 5);
-INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (5, 10);
-INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (6, 15);
-INSERT INTO espaco_de_trabalho (id_espaco, capacidade) VALUES (7, 20);
-
--- INSERT TIPO DE ESPAÇO DE TRABALHO
-
-INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (1, 'Mesa Compartilhada');
-INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (2, 'Escritório Privativo');
-INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (3, 'Sala de Reunião');
-INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (4, 'Sala de Reunião'); 
-INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (5, 'Escritório Privativo'); 
-INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (6, 'Mesa Compartilhada'); 
-INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (7, 'Sala de Reunião'); 
 
 -- INSERT ALIMENTACAO
 
@@ -136,6 +112,39 @@ INSERT INTO alimentacao (cod_barras, nome, id_usuario) VALUES ('7891234567897', 
 INSERT INTO alimentacao (cod_barras, nome, id_usuario) VALUES ('7891234567898', 'Frutas Desidratadas', 4);
 INSERT INTO alimentacao (cod_barras, nome, id_usuario) VALUES ('7891234567899', 'Pipoca de Micro-ondas', 522);
 
+--INSERT INTO DE PESSOAS
+
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (580, '356.845.987-10');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (65, '789.654.123-87');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (2, '123.456.789-00');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (143, '987.654.321-23');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (38334, '321.654.987-45');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (462, '852.741.963-12');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (851, '963.258.741-98');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (31, '741.852.963-77');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (4, '123.321.456-89');
+INSERT INTO pessoa (id_pessoa, cpf) VALUES (522, '789.987.654-33');
+
+-- INSERT INTO DE EMPRESAS
+
+INSERT INTO empresa (id_empresa, cnpj) VALUES (901, '12.345.678/0001-90');
+INSERT INTO empresa (id_empresa, cnpj) VALUES (702, '23.456.789/0001-01');
+INSERT INTO empresa (id_empresa, cnpj) VALUES (315, '34.567.890/0001-12');
+INSERT INTO empresa (id_empresa, cnpj) VALUES (819, '45.678.901/0001-23');
+INSERT INTO empresa (id_empresa, cnpj) VALUES (237, '56.789.012/0001-34');
+INSERT INTO empresa (id_empresa, cnpj) VALUES (118, '67.890.123/0001-45');
+
+
+-- INSERT TIPO DE ESPAÇO DE TRABALHO
+
+INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (1, 'Mesa Compartilhada');
+INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (2, 'Escritório Privativo');
+INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (3, 'Sala de Reunião');
+INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (4, 'Sala de Reunião'); 
+INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (5, 'Escritório Privativo'); 
+INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (6, 'Mesa Compartilhada'); 
+INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (7, 'Sala de Reunião'); 
+
 -- INSERT PLANO DE ASSINATURA
 
 INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Starter', 1, 9.99, NULL);
@@ -145,96 +154,36 @@ INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('G
 INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Platinum', 24, 79.99, 'Gold');
 INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Diamond', 36, 99.99, 'Platinum');
 
+-- INSERT CONVIDADOS
+
+INSERT INTO convidado (id_pessoa, no_convidado, id_sessao, nome_convidado) VALUES (580, 1, 1, 'João Silva');
+INSERT INTO convidado (id_pessoa, no_convidado, id_sessao, nome_convidado) VALUES (65, 2, 2, 'Maria Santos');
+INSERT INTO convidado (id_pessoa, no_convidado, id_sessao, nome_convidado) VALUES (2, 3, 3, 'Carlos Pereira');
+INSERT INTO convidado (id_pessoa, no_convidado, id_sessao, nome_convidado) VALUES (143, 4, 4,'Ana Oliveira');
+INSERT INTO convidado (id_pessoa, no_convidado, id_sessao, nome_convidado) VALUES (4, 5, 5, 'Pedro Costa');
+
 -- INSERT RESERVA
 
-INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (580, 101, 1001);
-INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (65, 102, 1002);
-INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (2, 103, 1003);
-INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (143, 104, 1004);
-INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (38334, 105, 1005);
-INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (462, 106, 1006);
-
--- INSERT COMPRAR
-
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-19 10:15:30', 580, 101, 'Starter');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-20 11:22:45', 65, 102, 'Basic');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-21 12:33:50', 2, 103, 'Silver');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-22 13:44:55', 143, 104, 'Gold');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-23 14:55:10', 38334, 105, 'Platinum');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-24 15:06:25', 462, 106, 'Diamond');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-25 16:17:35', 851, 107, 'Starter');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-26 17:28:45', 31, 108, 'Basic');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-27 18:39:55', 4, 109, 'Silver');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-28 19:50:05', 522, 110, 'Gold');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-30 10:25:40', 580, 201, 'Silver');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-31 11:36:55', 65, 202, 'Gold');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-01 12:47:15', 2, 203, 'Platinum');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-02 13:58:30', 143, 204, 'Diamond');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-03 15:09:45', 38334, 205, 'Starter');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-04 16:20:55', 462, 206, 'Basic');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-05 17:32:05', 851, 207, 'Silver');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-06 18:43:15', 31, 208, 'Gold');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-07 19:54:30', 4, 209, 'Platinum');
-INSERT INTO comprar (data_e_hora_compra, id_usuario, id_pagamento, nivel) VALUES (TIMESTAMP '2024-09-08 20:05:45', 522, 210, 'Diamond');
+INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (580, 1, 1);
+INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (65, 2, 2);
+INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (2, 3, 3);
+INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (143, 4, 4);
+INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (38334, 5, 5);
+INSERT INTO reserva (id_usuario, espaco_de_trabalho_id, id_sessao) VALUES (462, 6, 6);
 
 -- INSERT ORGANIZAR
 
-INSERT INTO organizar (id_empresa, id_evento) VALUES (101, 1001);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (202, 1002);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (303, 1003);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (404, 1004);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (505, 1005);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (606, 1006);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (707, 1007);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (101, 1008);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (202, 1009);
-INSERT INTO organizar (id_empresa, id_evento) VALUES (303, 1010);
+INSERT INTO organizar (id_empresa, id_evento) VALUES (901, 1);
+INSERT INTO organizar (id_empresa, id_evento) VALUES (702, 2);
+INSERT INTO organizar (id_empresa, id_evento) VALUES (315, 3);
+INSERT INTO organizar (id_empresa, id_evento) VALUES (819, 4);
+INSERT INTO organizar (id_empresa, id_evento) VALUES (237, 5);
+INSERT INTO organizar (id_empresa, id_evento) VALUES (118, 6);
 
--- INSERT SESSAO
+-- INSERT COMPRAR
 
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (1, TIMESTAMP '2024-08-19 09:00:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (2, TIMESTAMP '2024-08-20 10:30:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (3, TIMESTAMP '2024-08-21 11:45:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (4, TIMESTAMP '2024-08-22 13:00:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (5, TIMESTAMP '2024-08-23 14:15:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (6, TIMESTAMP '2024-08-24 15:30:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (7, TIMESTAMP '2024-08-25 16:45:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (8, TIMESTAMP '2024-08-26 18:00:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (9, TIMESTAMP '2024-08-27 19:15:00');
-INSERT INTO sessao (id_sessao, data_e_hora) VALUES (10, TIMESTAMP '2024-08-28 20:30:00');
-
--- INSERT EVENTO
-
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1001, TIMESTAMP '2024-08-19 08:00:00', INTERVAL '60' MINUTE, 15);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1002, TIMESTAMP '2024-08-20 09:30:00', INTERVAL '90' MINUTE, 20);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1003, TIMESTAMP '2024-08-21 10:45:00', INTERVAL '120' MINUTE, 18);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1004, TIMESTAMP '2024-08-22 12:00:00', INTERVAL '45' MINUTE, 10);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1005, TIMESTAMP '2024-08-23 13:15:00', INTERVAL '150' MINUTE, 12);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1006, TIMESTAMP '2024-08-24 14:30:00', INTERVAL '180' MINUTE, 14);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1007, TIMESTAMP '2024-08-25 15:45:00', INTERVAL '240' MINUTE, 20);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1008, TIMESTAMP '2024-08-26 17:00:00', INTERVAL '30' MINUTE, 8);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1009, TIMESTAMP '2024-08-27 18:15:00', INTERVAL '90' MINUTE, 16);
-INSERT INTO evento (id_evento, data_e_hora, duracao, qtd_pessoas) VALUES (1010, TIMESTAMP '2024-08-28 19:30:00', INTERVAL '120' MINUTE, 11);
-
--- INSERT PAGAMENTO
-
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (101, TIMESTAMP '2024-08-19 10:15:30', 'Ana Silva', '12345678901', '1234567812345678', '123', DATE '2025-01-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (102, TIMESTAMP '2024-08-20 11:22:45', 'Carlos Souza', '23456789012', '2345678923456789', '234', DATE '2025-02-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (103, TIMESTAMP '2024-08-21 12:33:50', 'Fernanda Oliveira', '34567890123', '3456789034567890', '345', DATE '2025-03-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (104, TIMESTAMP '2024-08-22 13:44:55', 'Joao Pereira', '45678901234', '4567890145678901', '456', DATE '2025-04-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (105, TIMESTAMP '2024-08-23 14:55:10', 'Mariana Costa', '56789012345', '5678901256789012', '567', DATE '2025-05-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (106, TIMESTAMP '2024-08-24 15:06:25', 'Roberto Almeida', '67890123456', '6789012367890123', '678', DATE '2025-06-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (107, TIMESTAMP '2024-08-25 16:17:35', 'Tatiane Lima', '78901234567', '7890123478901234', '789', DATE '2025-07-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (108, TIMESTAMP '2024-08-26 17:28:45', 'Vinícius Santos', '89012345678', '8901234589012345', '890', DATE '2025-08-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (109, TIMESTAMP '2024-08-27 18:39:55', 'Juliana Rodrigues', '90123456789', '9012345690123456', '901', DATE '2025-09-01');
-INSERT INTO pagamento (id_pagamento, data_e_hora, nome_portador_cartao, cpf_portador_cartao, numero_cartao, codigo_seguranca_cartao, data_vencimento_cartao) 
-VALUES (110, TIMESTAMP '2024-08-28 19:50:05', 'Eduardo Martins', '01234567890', '0123456701234567', '012', DATE '2025-10-01');
+INSERT INTO comprar (data_e_hora_compra, usuario_id, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-19 10:15:30', 580, 1, 'Starter');
+INSERT INTO comprar (data_e_hora_compra, usuario_id, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-20 11:22:45', 65, 2, 'Basic');
+INSERT INTO comprar (data_e_hora_compra, usuario_id, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-21 12:33:50', 2, 3, 'Silver');
+INSERT INTO comprar (data_e_hora_compra, usuario_id, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-22 13:44:55', 143, 4, 'Gold');
+INSERT INTO comprar (data_e_hora_compra, usuario_id, id_pagamento, nivel) VALUES (TIMESTAMP '2024-08-23 14:55:10', 38334, 5, 'Platinum');
