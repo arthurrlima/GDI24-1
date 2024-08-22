@@ -147,12 +147,12 @@ INSERT INTO tipo_espaco (espaco_trabalho, tipo) VALUES (7, 'Sala de Reunião');
 
 -- INSERT PLANO DE ASSINATURA
 
-INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Starter', 1, 9.99, NULL);
-INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Basic', 3, 19.99, 'Starter');
-INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Silver', 6, 29.99, 'Basic');
-INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Gold', 12, 49.99, 'Silver');
-INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Platinum', 24, 79.99, 'Gold');
-INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Diamond', 36, 99.99, 'Platinum');
+INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Basic', 1, 9.99, NULL);
+INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Basic', 3, 19.99, 'Premium');
+INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Premium', 6, 29.99, 'Premium Plus');
+INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Empresarial', 12, 49.99, NULL);
+INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Basic', 24, 79.99, 'Premium Plus');
+INSERT INTO plano_de_assinatura (nivel, tempo, preco, plano_evoluido) VALUES ('Basic', 36, 99.99, 'Premium Plus');
 
 -- INSERT CONVIDADOS
 
