@@ -91,12 +91,12 @@ INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (851, '
 INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (31, '(24) 9071-3310', '13767-704', 'Laura Pereira');
 INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (4, '(39) 9573-3672', '45768-419', 'Pedro Rocha');
 INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (522, '(20) 3360-3052', '58027-392', 'Fernanda Lima');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (901, '(11) 98234-5678', '01000-000', 'Ricardo Martins');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (702, '(21) 97345-6789', '20230-012', 'Tatiana Souza');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (315, '(31) 99876-5432', '30140-110', 'Paulo Henrique');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (819, '(41) 98765-4321', '80010-123', 'Beatriz Andrade');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (237, '(51) 99654-3210', '90050-002', 'Renato Carvalho');
-INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (118, '(61) 98456-7890', '70040-010', 'Juliana Ribeiro');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (901, '(11) 98234-5678', '01000-000', 'Tech Innovators Inc.');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (702, '(21) 97345-6789', '20230-012', 'Global Ventures Ltda.');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (315, '(31) 99876-5432', '30140-110', 'Pioneering Solutions SA');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (819, '(41) 98765-4321', '80010-123', 'Innovative Enterprises LLC');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (237, '(51) 99654-3210', '90050-002', 'NextGen Technologies Ltd.');
+INSERT INTO usuario (id_usuario, telefone, end_CEP, nome_usuario) VALUES (118, '(61) 98456-7890', '70040-010', 'Visionary Holdings Corp.');
 
 
 -- INSERT ALIMENTACAO
